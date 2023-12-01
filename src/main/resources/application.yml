@@ -1,0 +1,22 @@
+engine:
+  chat-gpt:
+    default: azure-open-ai-gpt-35-turbo
+    azure-open-ai:
+      services:
+        azure-open-ai-gpt-35-turbo:
+          model: gpt-35-turbo
+          api-version: 2023-07-01-preview
+          name: ${AZURE_OPEN_AI_GPT_35_TURBO_SERVICE_NAME:dev-sapo-gpt35-turbo}
+          api-key: ${AZURE_OPEN_AI_GPT_35_TURBO_API_KEY:secret}
+          endpoint: ${AZURE_OPEN_AI_GPT_35_TURBO_ENDPOINT:https://dev-sapo-gpt35-turbo.openai.azure.com}
+          development-name: ${AZURE_OPEN_AI_GPT_35_TURBO_DEVELOPMENT_NAME:change-it}
+          enabled: true
+
+        azure-open-ai-gpt-4:
+          model: gpt-4
+          api-version: 2023-07-01-preview
+          name: ${AZURE_OPEN_AI_GPT_4_SERVICE_NAME:dev-sapo-gpt4}
+          api-key: ${AZURE_OPEN_AI_GPT_4_API_KEY:secret}
+          endpoint: ${AZURE_OPEN_AI_GPT_4_ENDPOINT:https://dev-sapo-gpt4.openai.azure.com}
+          development-name: ${AZURE_OPEN_AI_GPT_4_DEVELOPMENT_NAME:change-it}
+          enabled: true
